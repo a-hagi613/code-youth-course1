@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions</title>
+  </head>
+  <body>
+    <h1>Arrow Functions</h1>
+    <h3>
+      Question 1: Create an arrow function that takes parameters First and Last
+      Name, then log the following msg to the console: "My name is (first name)
+      but I prefer you call me mr/mrs (last name)
+    </h3>
+    <h3>
+      Question 2: Create an arrow function that takes parameters Province, City
+      and Name, then log the following msg: "My name is (Name) and I live in
+      (Province), in the city of (City)
+    </h3>
+    <h3>
+      Question 3: Create an arrow function that multiplies 2 numbers and returns
+      the number after subtracting it by 2
+    </h3>
+    <h3>
+      Question 4: Create an arrow function that divides 2 numbers and returns
+      the number after adding 2 to it
+    </h3>
+  </body>
+
+  <script>
+    for (let i = 0; i < 5; i++) {
+      console.log(i);
+    }
+  </script>
+</html>
