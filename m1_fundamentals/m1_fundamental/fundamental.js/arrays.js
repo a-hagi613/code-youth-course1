@@ -54,14 +54,5 @@ const numbers =  [1, 2, 3, 4, 5, 6, 7, 8, 9, 19] ;
 
 const slicearr= numbers.splice(3,5);
 console.log(numbers);
-let newArr = numbers[]
-
-
-console.log(slicearr);
-
-
-
-
-
 
 
