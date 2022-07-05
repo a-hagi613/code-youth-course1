@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objects</title>
+  </head>
+  <body>
+    <h1>Object</h1>
+
+    <h3>
+      Question 1: Declare an object named User with the keys: username,
+      password, email, id. Then console log the value of each
+    </h3>
+    <h3>
+      Queston 2: Declare an object that has three key value pairs, "firstName",
+      "lastName" and "score" console.log() there name, and there score in a
+      sentence then console.log() the object and check it out in the console
+    </h3>
+    <h3>
+      Question 3: Declare an object named Car with the keys: make, model, year,
+      milaeage, and 2 methods: turnOn()-that has the string "The car has been
+      turned on" and turnOff()-that has the string "The car has been turned
+      off". Then console log each key
+    </h3>
+  </body>
+</html>
