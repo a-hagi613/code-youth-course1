@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM exercise</title>
+  </head>
+  <body>
+    <h1>DOM</h1>
+
+    <h3>
+      Question 1: Create a p tag inside your html with a class and id of your
+      choosing then select by its class, id, and tag name
+    </h3>
+    <h3>
+      Question 2: Create an empty p tag with some text than change the text
+      color to blue, select is using query selector
+    </h3>
+    <h3>
+      Question 3: Create a div with 3 tags in it. Select all of them using
+      querySelectorAll and give them all a border
+    </h3>
+    <h3>
+      Question 4: Create a Ul with 3 li tags with text in them. Only select the
+      first li tag and increase it's font size to 20px
+    </h3>
+    <h3>
+      Question 5: Create a Ul with 5 li tags and the 3rd li has a p tag in it.
+      Then give that p tag a color of red (all elements should have text in
+      them)
+    </h3>
+  </body>
+</html>
