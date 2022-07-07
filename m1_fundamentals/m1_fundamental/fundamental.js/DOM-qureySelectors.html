@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="one" class="both"> Paragraph 1</p>
+
+    <p id="two" class=" both"> Parargraph 2</p>
+
+    <ul>
+        <li> one</li>
+        <li> two</li>
+        <li> three</li>
+   </ul>
+
+<script>
+    const one = document.getElementById("one");
+    one.style.color="blue";
+
+
+    const two = document.getElementById("two");
+    two.style.color= "red";
+
+
+    const both = document.querySelectorAll(".both")
+    
+    for (let i = 0; i < both.length; i++) {
+    both[i].style.backgroundColor = "green"
+};
+
+   const list = document.createElement("li")
+   list.innerHTML="four"
+   document.body.appendChild(list)
+
+</script>    
+</body>
+</html>

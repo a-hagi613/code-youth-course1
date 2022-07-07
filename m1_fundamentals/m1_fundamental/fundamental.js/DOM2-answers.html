@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <script>
+        //questinon 1
+        const para1 = document.createElement("p")
+      para1.innerHTML="This is paragraph 1"
+      document.body.appendChild(para1)
+
+    
+      //question 2
+
+      const divs = document.createElement("div")
+      divs.innerHTML="This is paragraph 2"
+      divs.style.border="solid black"
+      document.body.appendChild(divs)
+
+      const divs1 =document.createElement("p")
+      divs1.innerHTML = "This is inside the div"
+      divs.appendChild(divs1)
+
+      const divs2 =document.createElement("p")
+      divs2.innerHTML = "This is also inside the div"
+      divs.appendChild(divs2)
+
+
+      //question 3
+      const divs3 = document.createElement("div")
+      divs3.innerHTML= "This is a list"
+      divs3.style.border="solid black"
+      divs.appendChild(divs3)
+     
+      const list = document.createElement("ul")
+      divs3.appendChild(list)  
+
+      for (let i=0; i<=3; i++) {
+        const list1 = document.createElement("li")
+        list1.innerHTML= "one, two, three"
+        list.appendChild(list1)
+      }
+
+
+    //   const list2 = document.createElement("li")
+    //   list2.innerHTML= "one"
+    //   list.appendChild(list2)
+
+    //   const list3 = document.createElement("li")
+    //   list3.innerHTML= "two"
+    //   list2.appendChild(list3)
+
+    //   const list4 = document.createElement("li")
+    //   list4.innerHTML= "three"
+    //   list3.appendChild(list4)
+
+   </script>
+
+</body>
+</html>
+
+
+
+
+<!-- Question 1: In JS, create a p tag with some text and append to the page
+
+Question 2: In JS, create a div with 2 p tags inside with some text, then
+      append to the page
+
+Question 3: In JS, create a div with ul tag which has 3 li inside, all
+      with text, then append to the page (for loop is optional) -->
