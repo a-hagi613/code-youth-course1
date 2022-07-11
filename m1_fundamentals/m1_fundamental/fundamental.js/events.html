@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="header">This will change purple when hovered over</h1>
+
+    <p id="para"> This will change to grey when clicked on</p>
+
+    <button id="button">Click Me</button>
+
+    <script>
+        const head = document.getElementById("header");
+        head.addEventListener("mouseover", mouseoverFxn);
+        function mouseoverFxn() {
+            head.style.background = "purple";
+        };
+
+        const para = document.getElementById("para");
+        para.onclick= clickOnFxn;
+        function clickOnFxn() {
+            para.style.backgroundColor = "grey";
+        };
+
+
+        const but = document.getElementById("button");
+        but.addEventListener("dblclick", dblClickFxn);
+         function dblClickFxn() {
+            but.style.backgroundColor = "black";
+            but.style.color= "white"
+        };
+
+
+
+
+    </script>
+
+
+</body>
+</html>
+
+
+<!-- 
+Create a heading element
+With some content
+Change its color to purple when placed mouse over it
+Use addEventListener for that
+
+Create a paragraph element and change its background colour to grey when click over it using p.onclick
+Create a button, change its text color white and background color black when double clicked—use any even handling way
+ -->
