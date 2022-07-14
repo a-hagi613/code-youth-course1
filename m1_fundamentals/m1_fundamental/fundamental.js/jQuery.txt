@@ -1,0 +1,12 @@
+//link to jQuery's CDN (must use paste on any JS file if it uses jQuery)
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+A jQuery statement typically starts with the dollar sign ($) and ends with a semicolon (;)
+
+ex: <script>
+    $(document).ready(function(){
+        // Some code to be executed...
+        alert("Hello World!");
+    });
+</script>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</head>
+<body>
+    <table>  
+        <tr>
+            <th>
+                First Name
+            </th>
+
+            <th>
+                Last Name
+            </th>
+
+            <th>
+             Points
+            </th>
+
+        </tr>
+
+        <tr>
+            <td>
+                Jill
+            </td>
+
+            <td>
+                Smith
+            </td>
+
+            <td>
+                50
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Eve
+            </td>
+
+            <td>
+                Jackson
+            </td>
+
+            <td>
+                94
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Adam
+            </td>
+
+            <td>
+                Johnson
+            </td>
+
+            <td>
+                67
+            </td>
+        </tr>
+    </table>
+
+    <br/> <br/> <br/> <br/> 
+
+    <form name="register">
+        Name: <input id="name" type="text" name="name" size="20" placeholder="John Doe" /> <br/> <br/>
+        Email: <input id="email" type="email" name="email" placeholder="john.doe@gmail.com"> <br/> <br/>
+        Password: <input id="password" id="pass" type="password" name="pswd" placeholder="John123" /> <br/> <br/>
+        <button id="but1"> Submit</button>
+        <button id="but2">Reset</button>
+        </form>
+
+        <br/> <br/> <br/> <br/> 
+
+
+    <!-- <div class="inputDiv">
+        <p>Sign In</p>
+        <form>
+            <input type="email">
+            <input type="password">
+        </form>
+    </div> -->
+
+
+    <script>
+        $(document).ready(function(){
+            // change the background colors of the odd rows to yellow and even rows to orange
+            $("tr:odd").css("background", "yellow");
+            $("tr:even").css("background", "orange");
+
+            $("#name").css("background", "purple");
+            $("#email").css("background", "red");
+            $("#password").css("background", "green");
+            $("#but1").css("background", "blue");
+            $("#but2").css("background", "orange");
+
+            $("<div/>").addClass("inputDiv")
+            $("p").html("<p>Sign In</p>");
+            // $("p").text("Sign In")
+            $("<div/>").append("p")
+
+        
+
+        });
+        </script>
+</body>
+</html>
