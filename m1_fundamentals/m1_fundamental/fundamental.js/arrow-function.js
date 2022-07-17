@@ -48,6 +48,5 @@ let result2 = (a,b) => {
     let c = a/b
     let d = c+2
     console.log("The answer is", d)
-}
-
-result2(2,4)
+};
+result2(2,4);
