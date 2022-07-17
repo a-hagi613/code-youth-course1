@@ -10,7 +10,7 @@
 
 </head>
 <body>
-    <table>  
+    <table class="me">  
         <tr>
             <th>
                 First Name
@@ -103,10 +103,24 @@
             $("#but1").css("background", "blue");
             $("#but2").css("background", "orange");
 
-            $("<div/>").addClass("inputDiv")
-            $("p").html("<p>Sign In</p>");
-            // $("p").text("Sign In")
-            $("<div/>").append("p")
+            //Adding more table rows
+            $(".me").append("<tr> </tr>");
+            $(".me").append("<td>Abdullahi </td>");
+            $(".me").append("<td>Hagi </td>");
+            $(".me").append("<td>100 </td>");
+            $(".me").css("color, white");
+            $(".me").css("background, red");
+
+
+
+            // Carters Question:
+            // $("<div/>").addClass("inputDiv")
+            // $("p").html("<p>Sign In</p>");
+            // // $("p").text("Sign In")
+            // $("<div/>").append("p")
+
+
+
 
         
 

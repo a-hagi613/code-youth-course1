@@ -7,32 +7,56 @@
     <title>Document</title>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    
+
 </head>
+
+<style>
+
+    #navBar {
+        background-color:black;
+        color: azure;
+    }
+
+
+    #navBar p{ display: inline-block;
+    }
+
+    p{
+        margin-right: 150px;
+        margin-left: 150px;
+    }
+
+    .class{
+        background-color: green !important; 
+    }
+</style>
+
 <body>
-    
+
+    <nav id="navBar">
+        <p>Home</p>
+        <p>About</p>
+        <p>Contact</p>
+    </nav>
 
     <script>
-        $(document).ready(function(){
-           
-           $("<div/>").addClass("inputDiv")
-            $("body").html("<p>Sign In</p>");
-            $("<div/>").append("p")
+        $(document).ready(function () {
+            $("p").mouseover(function (event) {
+                $(event.currentTarget).css("background-color", "grey");
+            });
 
-        
+            $("p").mouseout(function (event) {
+                $(event.currentTarget).css("background-color", "initial");
+            });
 
-        });
+            $("p").click(function (event) {
+                $(event.currentTarget).addClass("class");
+            });
+
+
+
+      });
         </script>
+    
 </body>
 </html>
-
-
-
-
- <!-- <div class="inputDiv">
-        <p>Sign In</p>
-        <form>
-            <input type="email">
-            <input type="password">
-        </form>
-    </div> -->
