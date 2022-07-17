@@ -95,5 +95,4 @@ for(let key in test){
     console.log(test[key]["testPass"]);
 	}
 
-    console.log(testName, "Passed with", numParticipants, "participants")   
-    console.log(testName, "Failed with", numParticipants, "participants")
+    console.log(test, "Failed with participants")
