@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .grid-container{
+        display: grid;
+        grid-template-columns: 200px 250px;
+        grid-auto-rows: minmax(150, auto);
+        gap: 20px ;
+    }
+
+    .grid-container-1{
+       color: blue;
+       background-color: gray;
+       border: solid black;
+       grid-column-start: 1;
+       grid-column-end: 3;
+       grid-row:span 3;
+    }
+
+    .grid-container-2{
+        color: blue;
+       background-color: gray;
+       border: solid black;
+       grid-row:span 5;
+    }
+
+    
+    .grid-container-3{
+        color: blue;
+       background-color: gray;
+       border: solid black;
+       grid-row:span 5;
+      
+    }
+
+    .grid-container-4{
+        color: blue;
+       background-color: gray;
+       border: solid black;
+       grid-row:span 7;
+       
+       
+    }
+
+    .grid-container-5{
+        color: blue;
+       background-color: gray;
+       border: solid black;
+       grid-row:span 7;
+      
+    }
+    
+</style>
+<body>
+    <div class="grid-container">
+        <div class="grid-container-1"> grid 1 (Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, facilis!</div>
+        <div class="grid-container-2"> grid 2 (Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste!</div>
+        <div class="grid-container-3"> grid 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nam, totam repellendus id officia inventore blanditiis culpa voluptates deserunt laboriosam libero vel ullam voluptate animi adipisci! Quisquam, atque? Maiores, inventore? </div>
+        <div class="grid-container-4"> grid 4 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, enim, at commodi dolorum accusantium itaque, incidunt consequuntur illum alias voluptatibus culpa delectus. Pariatur hic aperiam modi soluta sed cumque dignissimos. </div>
+        <div class="grid-container-5"> grid 5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem tenetur magnam quia dignissimos est! Perferendis sed in qui ex, porro reiciendis nesciunt velit quis. Alias quasi error quaerat. Illum, ab!</div>
+    </div>
+</body>
+</html>
