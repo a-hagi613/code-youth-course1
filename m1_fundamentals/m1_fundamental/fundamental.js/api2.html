@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <p id="name">
+        name:
+    </p>
+
+    <p id="email">
+        email:
+    </p>
+
+    <p id="city">
+        city:
+    </p>
+
+    <p id="street">
+        street:
+    </p>
+
+    <p id="suite">
+        suite:
+    </p>
+
+
+
+    <script>
+        let url= "https://jsonplaceholder.typicode.com/users"
+        fetch(url)
+        .then( (response) => {
+            console.log(response)
+            return response.json()
+        })
+
+        .then((data) => {
+            console.log(data[0].name)
+            $("#name").append(data[0].name)
+            $("#email").append(data[0].email)
+            $("#city").append(data[0].address.city)
+            $("#street").append(data[0].address.street)
+            $("#suite").append(data[0].address.suite)
+            
+    
+        })
+
+        .catch((error) => {
+            console.log(error, "error")
+        })
+        
+
+
+    </script>
+    
+</body>
+</html>
