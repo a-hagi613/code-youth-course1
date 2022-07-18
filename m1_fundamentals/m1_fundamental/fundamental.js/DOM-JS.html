@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> This is a list that changes colors</h1>
+
+    <ul>Colors</ul>
+    <li id="red" > Red</li>
+    <li id="green">Green</li>
+    <li id="blue">Blue</li>
+
+ <button onclick="change()"> change</button>
+
+<script>
+   //this is how to get an element by its id (.getElementById)
+    function change() {
+        const red = document.getElementById("red");
+        const green = document.getElementById("green");
+        const blue = document.getElementById("blue");
+        
+        red.style.color="red";
+        green.style.color="green";
+        blue.style.color="blue";
+    }
+</script>
+</body>
+</html>

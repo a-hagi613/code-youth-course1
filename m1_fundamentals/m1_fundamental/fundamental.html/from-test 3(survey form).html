@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- This is the pciture we have to recreate: https://devpractical.com/public/2021/survey-form-website-project-screenshot.png -->
+</head>
+
+<body style="background-color:lightcyan;">
+
+    <center>
+
+    <h1> <b> Survey Form</h1>
+
+        <table>
+
+             <tr>
+               <td>
+               <p style="text-align: right" >  Let us know how we can improve FreeCodeCamp </p>
+                    <br> <br> <br>
+               </td> 
+            </tr>
+           
+
+            <tr>
+                <td>
+                    *Name:
+                    <br> <br></td>
+
+                <td>
+                    <input type="text" name="name" size="20" placeholder="Entere your name" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    *Email:
+                    <br> <br></td>
+
+                <td>
+                    <input type="email" name="email" placeholder="Enter your email">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    *Age:
+                <br> <br> </td>
+
+                <td>
+                    <input type="number" name="age" placeholder="Age"> 
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    *Which option best describes your cuurent role?
+                <br> <br></td>
+
+                <td>
+                    <select name="role"> <option value="student">Student</option> <option value="full time employed">FT Employment</option> <option value="part time mployment">PT Employment</option> <option value="unemployed"> Unemployed </option>  </select>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                 How likely are you to reccomend FreeCodeCamp to a friend?
+                 <br> <br> </td>
+
+                <td>
+                    <input type="radio" name="rec" value="definitely" checked="checked" /> Definitely
+                    <input type="radio" name="rec" value="maybe"/> Maybe
+                    <input type="radio" name="rec" value="not sure"/> Not sure
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    What do you like most in FreeCodeCamp?
+                    <br> <br></td>
+
+                <td>
+                    <select name="like"> 
+                        <option value=""> Select an option</option>
+                        <option value="html">HTML</option>
+                        <option value="css"> CSS</option>
+                        <option value="javascript"> Javascript</option>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Things that should be improved in the future (check all that apply)
+                </td>
+
+                <td>
+                    <input type="checkbox" name="feedback" value="front end" checked="checked" /> Front-End Projects
+                    <input type="checkbox" name="feedback" value="back end" /> Back-End Projects
+                    <input type="checkbox" name="feedback" value="data" /> Data Visuilaztion
+                </td>
+        
+
+            </tr>
+
+        </table>
+
+    </center>
+
+</body>

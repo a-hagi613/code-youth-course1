@@ -1,0 +1,59 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>DOM Events</h1>
+
+    <form name="registar" id="registar">
+       <!-- onsubmit="return end()" -->
+          Username <input type="text" name="username" size="25" placeholder=Username /> <br> <br>
+           Password <input type="password" name="password" size="25" placeholder="Password"/> <br> <br>
+           Email <input type="email" name="email" size="25" placeholder="abc@gmail.com" /> <br> <br>   
+           <input type="submit" value="Submit"></input>
+           <input type="reset" value="Reset"></input>          
+    </form>
+
+    <script>
+      // function end() {
+      //   const name1= document.forms["reg"] ["username"]
+      //   console.log("name1", name1.value)
+
+      //   const name2= document.forms["reg"] ["password"]
+      //   console.log("name2", name2.value)
+
+      //   const name3= document.forms["reg"] ["email"]
+      //   console.log("name3", name3.value)
+      // }
+
+      const registar = document.getElementById("registar");
+
+      console.log(registar)
+      registar.addEventListener("submit", function getUser(e) {
+        e.preventDefault();
+        console.log(registar.username.value);
+      });
+
+    
+    </script>
+
+  </body>
+</html>
+
+
+
+<!-- <h3>
+  Question 1: Create a form with a username input and then get the value
+  typed in when form is submitted. Console log the value
+</h3>
+<h3>
+  Question 2: Add an email input to the previous form and then get its value
+  on submit. Console log the value
+</h3>
+<h3>
+  Question 3: Add a password input to the previous form then get its value
+  on submit. Then console log the value
+</h3> -->

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Question 1</h3>
+
+    <p id="paraId"> This is paragraph 1</p>
+    <p class="paraClass"> This is paragraph 2</p>
+    <!-- <p class="blue">This is the answer to number two</p> -->
+
+    <div class="divs"> Question 3
+        <p> div 1 </p>
+        <p> div 2 </p>
+        <p> div 3</p>
+    </div>
+
+    <ul>Question 4
+        <li id="three">one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+
+    
+    <ul> Question 5
+        <li>one</li>
+        <li>two</li>
+        <li> <p id="red">three </p></li>
+        <li>four</li>
+        <li>five</li>
+    </ul>
+
+    <script>
+          //question 1
+          console.log(document.getElementById("paraId"))
+          console.log(document.getElementsByClassName("paraClass")[0])
+
+        //question 3
+         const divs= document.querySelectorAll(".divs p")
+
+         for (let i = 0; i < divs.length; i++) {
+             divs[i].style.border="thick solid"
+           };
+        
+
+           //question 4
+           const threee= document.getElementById("three");
+           three.style.fontSize= "20px"
+
+       //question 5
+       const red= document.getElementById("red");
+       red.style.color="red"
+  
+    </script>
+</body>
+</html>
+<!-- Question 1: Create a p tag inside your html with a class and id of your
+      choosing then select by its class, id, and tag name -->
+
+      <!-- //      Question 2: Create an empty p tag with some text than change the text
+      //   color to blue, select is using query selector
+         -->
+
+         <!-- Question 3: Create a div with 3 tags in it. Select all of them using
+         querySelectorAll and give them all a border     -->
+
+         <!-- Question 4: Create a Ul with 3 li tags with text in them. Only select the
+         first li tag and increase it's font size to 20px -->
+<!-- 
+         Question 5: Create a Ul with 5 li tags and the 3rd li has a p tag in it.
+      Then give that p tag a color of red (all elements should have text in
+      them) -->

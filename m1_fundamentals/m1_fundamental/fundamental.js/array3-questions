@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array</title>
+  </head>
+
+  <!-- map, reduce , filter and forEach -->
+
+  <body>
+    <h1>Array Methods</h1>
+
+    <h3>
+      Question 1: Create the following array [10, 20, 30, 40, 50, 60, 70, 80,
+      90, 100,] then using filter method, create a new array that has numbers
+      over 40
+    </h3>
+    <h3>
+      Question 2: Create the following array ['ice cream', 'cookies',
+      'pancakes'] then using forEach method, console log the phrase: "I love
+      (array item). Your log should look like: "I love ice cream, I love
+      cookies" etc
+    </h3>
+    <h3>
+      Question 3: Create the following array ['user1', 'user2', 'user3'] then
+      using map method, create a new array that replaces the users with the
+      names 'mark', 'mike', 'milo'
+    </h3>
+    <h3>
+      Question 4: Create the following array: [2, 2, 2, 2,], then add all the
+      array items together using the reduce method
+    </h3>
+  </body>
+</html>

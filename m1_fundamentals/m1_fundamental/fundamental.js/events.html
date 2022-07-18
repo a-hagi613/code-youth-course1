@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="header">This will change purple when hovered over</h1>
+
+    <p id="para"> This will change to grey when clicked on</p>
+
+    <button id="button">This button will turn black with white text when double clicked</button>
+    <br><br><br>
+
+    <div id="div1"> This is a div</div>
+
+    <script>
+        const head = document.getElementById("header");
+        head.addEventListener("mouseover", mouseoverFxn);
+        function mouseoverFxn() {
+            head.style.background = "purple";
+        };
+
+        const para = document.getElementById("para");
+        para.onclick = clickOnFxn;
+        function clickOnFxn() {
+            para.style.backgroundColor = "grey";
+        };
+
+
+        const but = document.getElementById("button");
+        but.addEventListener("dblclick", dblClickFxn);
+        function dblClickFxn() {
+            but.style.backgroundColor = "black";
+            but.style.color = "white"
+        };
+
+
+        const div1 = document.getElementById("div1")
+
+        div1.addEventListener("mouseover", mouseoverFxn2)
+        function mouseoverFxn2() {
+            div1.style.backgroundColor = "red";
+        };
+
+        div1.addEventListener("mouseout", mouseoutFxn)
+        function mouseoutFxn() {
+            div1.style.backgroundColor = "white";
+        };
+
+        div1.style.height = "10 rem";
+        div1.style.width = "10 rem";
+        div1.style.border = "solid black";
+
+    </script>
+
+</body>
+
+</html>
