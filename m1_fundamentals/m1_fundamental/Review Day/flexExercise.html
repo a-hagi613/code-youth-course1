@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Question One -->
+    <!-- Using flex make the p tag inside flexTestOne appear on the bottom right -->
+    <style>
+        .flexTestOne{
+            border: 1px solid;
+            width: 20rem;
+            height: 10rem;
+        }
+    </style>
+
+    <div class="flexTestOne"><p>Bottom Right</p></div>
+
+    <!-- Hint: justify-content, align-items -->
+    <!-- End of Question One -->
+
+    
+<!-- Question Two --> <hr>
+<!-- Make it so the three divs inside firstTestTwo are centered vertically and have some space between them only using flex -->
+    <style>
+        .flexTestTwo{
+            border: 1px solid;
+            width: 50vw;
+            height: 20rem;
+        }
+        .flexTestTwo div{
+            border: 1px solid;
+            width: 10%;
+            box-sizing: border-box;
+            height: 10rem;
+        }
+    </style>
+
+    <div class="flexTestTwo">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!-- End of Question Two -->
+
+    <!-- Question Three --> <hr>
+    <!-- Reference FlexQuestion3.png and make the html in question three look like it using flex -->
+
+    <style>
+        .flexTestThree{
+            border: 1px solid;
+            width: 20rem;
+            height: 20rem;
+            margin: 10rem
+        }
+    </style>
+
+    <div class="flexTestThree">
+        <div class="divBuffer">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="divBuffer">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- Hint: Give all the divs borders -->
+    <!-- Hint: nth-child -->
+    <!-- End of Question Three -->
+
+    <!-- Question Four -->
+    <!-- Using flex have "home", and "about" appear on the left of the navBar
+        Make "FAQ", "Profile", and "Logout" appear on the right -->
+    <style>
+        .navBar{
+            width: 100%;
+            height: 7vh;
+            background-color: black;
+        }
+        .navBar p{
+            color: white;
+        }
+        .navItems{
+            margin: 0 1rem;
+        }
+    </style>
+    <div class="navBar">
+        <div class="navSplit">
+            <div class="navItems">
+                <p>Home</p>
+            </div>
+            <div class="navItems">
+                <p>About</p>
+            </div>
+        </div>
+        <div class="navSplit">
+            <div class="navItems">
+                <p>FAQ</p>
+            </div>
+            <div class="navItems">
+                <p>Profile</p>
+            </div>
+            <div class="navItems">
+                <p>Logout</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
