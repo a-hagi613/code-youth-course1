@@ -34,47 +34,47 @@
 
         // let aPlus= 90-100, a= 85-89, aMinus= 80-84, bPlus= 75-79, b= 70-74, bMinus= 65-69, cPlus= 60-64, c= 55-59, cMinus= 50-54; 
 
-        // let grade= 24;
+        let grade= 74;
 
-        // if(grade >=90) {
-        //     console.log("You got an A+")
-        // }
+        if(grade >=90) {
+            console.log("You got an A+")
+        }
 
-        // else if( grade >=85 && grade <=89){
-        //     console.log("You got an A")
-        // }
+        else if( grade >=85 && grade <=89){
+            console.log("You got an A")
+        }
 
-        // else if (grade >=80 && grade <=84){
-        //     console.log("You got an A-")
-        // }
+        else if (grade >=80 && grade <=84){
+            console.log("You got an A-")
+        }
 
-        // else if(grade >=75 && grade <=79) {
-        //     console.log("You got an B+")
-        // }
+        else if(grade >=75 && grade <=79) {
+            console.log("You got an B+")
+        }
 
-        // else if(grade >=70 && grade <=74){
-        //     console.log("You got an B")
-        // }
+        else if(grade >=70 && grade <=74){
+            console.log("You got an B")
+        }
 
-        // else if(grade >=65 && grade <=69){
-        //     console.log("You got an B-")
-        // }
+        else if(grade >=65 && grade <=69){
+            console.log("You got an B-")
+        }
 
-        // else if(grade >=60 && grade <=64) {
-        //     console.log("You got an C+")
-        // }
+        else if(grade >=60 && grade <=64) {
+            console.log("You got an C+")
+        }
 
-        // else if(grade >=55 && grade <=59){
-        //     console.log("You got an C")
-        // }
+        else if(grade >=55 && grade <=59){
+            console.log("You got an C")
+        }
 
-        // else if(grade >=50 && grade <=54){
-        //     console.log("You got an C-")
-        // }
+        else if(grade >=50 && grade <=54){
+            console.log("You got an C-")
+        }
 
-        // else {
-        //     console.log("You have failed")
-        // };
+        else {
+            console.log("You have failed")
+        };
 
 
 

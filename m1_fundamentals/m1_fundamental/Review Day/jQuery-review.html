@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <table border="1" style="width: 5rem; height: 5rem" class="myTable">
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <p class="copyMe">Click me to copy</p>
+
+    <script>
+    //question 1
+    $(document).ready(function(){
+    $("body").append("<div> hello </div>");
+    $("div").addClass("div1");
+    $("div").width("100%");
+    $("div").height("10rem");
+    $("div").css('border','1px solid black');
+    })
+
+    //question 2
+    $(document).ready(function(){
+        $("body").keypress(function (event) {
+                $(event.currentTarget).append("<p> </p>").append(event.originalEvent.key);
+            });
+    })
+
+    // question 3
+    $(document).ready(function(){
+        $("td:even").append(Math.floor(Math.random() * 10));
+        $("td:odd").append(Math.floor(Math.random() * 10))
+    })
+
+    //question 4
+    $(document).ready(function(){
+
+
+        document.getElementsByTagName("p").onclick = (event) => {
+        navigator.clipboard.writeText(event.currentTarget.innerText);
+}
+        // $("body").click(function (event) {
+        //         $(event.currentTarget).append("<p> </p>").append(event.originalEvent.key);
+        //     });
+    })
+
+
+</script>
+</body>
+</html>
