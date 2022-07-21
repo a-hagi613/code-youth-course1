@@ -49,13 +49,22 @@
 
 
         document.getElementsByTagName("p").onclick = (event) => {
-        navigator.clipboard.writeText(event.currentTarget.innerText);
-}
-        // $("body").click(function (event) {
-        //         $(event.currentTarget).append("<p> </p>").append(event.originalEvent.key);
-        //     });
+        navigator.clipboard.writeText(event.currentTarget.innerText);}
     })
 
+    //fetch API question 1
+    let url = 'https://jsonplaceholder.typicode.com/users'
+    fetch(url)
+    .then( (response) => {
+        // console.log(response)
+        return response.json()
+    })
+    .then((data) => {
+        console.log(data)
+    })
+    .catch((error) => {
+        console.log(error,"error")
+    })
 
 </script>
 </body>
